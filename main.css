@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://raw.githubusercontent.com/DejanDesign/assets/main/img.jpg);
+  background-size: auto;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 450px;
+  height: 250px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(30, 222, 181, 0.3);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  z-index: 3;
+  border-radius: 30px;
+}
+
+.cardBefore {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #1afa00;
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translateX(-500px);
+  transform: translateX(-500px);
+  -webkit-animation: animBefore 10s ease-in-out infinite;
+  animation: animBefore 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes animBefore {
+  0% {
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+  }
+  25% {
+    -webkit-transform: translate(500px, -200px);
+    transform: translate(500px, -200px);
+  }
+  50% {
+    -webkit-transform: translate(100px, 200px);
+    transform: translate(100px, 200px);
+  }
+  75% {
+    -webkit-transform: translate(-200px, -200px);
+    transform: translate(-200px, -200px);
+  }
+  100% {
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+  }
+}
+
+@keyframes animBefore {
+  0% {
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+  }
+  25% {
+    -webkit-transform: translate(500px, -200px);
+    transform: translate(500px, -200px);
+  }
+  50% {
+    -webkit-transform: translate(100px, 200px);
+    transform: translate(100px, 200px);
+  }
+  75% {
+    -webkit-transform: translate(-200px, -200px);
+    transform: translate(-200px, -200px);
+  }
+  100% {
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+  }
+}
+
+.cardAfter {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: rgba(242, 250, 0, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  -webkit-animation: animAfter 10s ease-in-out infinite;
+  animation: animAfter 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes animAfter {
+  0% {
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+  }
+  25% {
+    -webkit-transform: translate(-500px, 200px);
+    transform: translate(-500px, 200px);
+  }
+  50% {
+    -webkit-transform: translate(-100px, -200px);
+    transform: translate(-100px, -200px);
+  }
+  75% {
+    -webkit-transform: translate(200px, 200px);
+    transform: translate(200px, 200px);
+  }
+  100% {
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+  }
+}
+
+@keyframes animAfter {
+  0% {
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+  }
+  25% {
+    -webkit-transform: translate(-500px, 200px);
+    transform: translate(-500px, 200px);
+  }
+  50% {
+    -webkit-transform: translate(-100px, -200px);
+    transform: translate(-100px, -200px);
+  }
+  75% {
+    -webkit-transform: translate(200px, 200px);
+    transform: translate(200px, 200px);
+  }
+  100% {
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+  }
+}
+
+h1 {
+  color: #ffc83d;
+}
